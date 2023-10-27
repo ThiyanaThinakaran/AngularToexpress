@@ -1,0 +1,28 @@
+<div class="container">
+    <h2>Contact Us Form</h2>
+    <form (submit)="insertUser()">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" class="form-control" id="firstName" [(ngModel)]="firstName" name="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" class="form-control" id="lastName" [(ngModel)]="lastName" name="lastName" required>
+      </div>
+      <div class="form-group">
+        <label for="emailId">Email ID:</label>
+        <input type="email" class="form-control" id="emailId" [(ngModel)]="emailId" name="emailId" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea class="form-control" id="address" [(ngModel)]="address" name="address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="phoneNo">Phone Number:</label>
+        <input type="tel" class="form-control" id="phoneNo" [(ngModel)]="phoneNo" name="phoneNo" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Add</button>
+      <button type="button" class="btn btn-secondary" (click)="updateuser()">Update</button>
+      <button type="button" class="btn btn-danger" (click)="deleteuser()">Delete</button>
+    </form>
+  </div>

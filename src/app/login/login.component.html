@@ -1,0 +1,14 @@
+<p>Login Page!</p>
+<b>Enter your login details</b><br />
+<form #loginData="ngForm" (ngSubmit)="loginUser(loginData)">
+ <br><label>{{this.loginResponse}}</label><br><br>
+  Email ID <input type="text" name="emailID" ngModel required /><br />
+  Password <input type="password" name="password" ngModel required /><br />
+  <input type="submit" value="Login"/>
+
+</form>
+<nav>
+  <a routerLink="/home"><img src="assets/home.png" width="200" height="150"></a><br>
+  <a routerLink="/aboutus">About us</a><br>
+  <a routerLink="/contactus">Contact us</a><br>
+</nav>
