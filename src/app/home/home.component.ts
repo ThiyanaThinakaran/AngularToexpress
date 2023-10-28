@@ -28,6 +28,8 @@ export class HomeComponent {
    this.userList=this.baccess.getAllUsers();
   }
 
+  
+
 }
 
  
